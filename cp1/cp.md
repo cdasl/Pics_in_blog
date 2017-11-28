@@ -6,10 +6,10 @@
 (1). 分解题干中的正则表达式，本题中，可分为三部分,即
 `a=c=(a|b)*, b=abb`。基本的构造规则见龙书p101。
 (2). 画出每一部分对应的NFA，如下
-![](cp3.1.a.png)a, c（7是终态）
-![](cp3.1.b.png)b
+![](https://github.com/cdasl/Pics_in_blog/blob/master/cp1/cp3.1.a.png?raw=true)a, c（7是终态）
+![](https://github.com/cdasl/Pics_in_blog/blob/master/cp1/cp3.1.b.png?raw=true)b
 
-(3). 拼接，得![aha](3.1.png)
+(3). 拼接，得![aha](https://github.com/cdasl/Pics_in_blog/blob/master/cp1/3.1.png?raw=true)
 状态转移序列就顺着NFA走就行了。
 ### 3.2 使用子集构造法将3.1得到的NFA转换为DFA，写出分析ababbab过程中的状态转移。
 **Solution:**
@@ -32,7 +32,7 @@ I | F  | G
 
 ### 3.3 最小化3.2得到的DFA
 **Solution:** 在上面的表格中，找到除 `State` 以外完全相同的 n 行，它们就可以合并成一个状态，最后的DFA如下:
-![](3.3.png)
+![](https://github.com/cdasl/Pics_in_blog/blob/master/cp1/3.3.png?raw=true)
 
 To be continued...
 
